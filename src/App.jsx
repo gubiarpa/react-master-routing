@@ -3,13 +3,13 @@ import { lazy, Suspense } from 'react'
 import { Router } from './Router'
 import { Route } from './Route'
 
-import HomePage from './pages/Home'
+import HomePage from './pages/Home.jsx'
 
 import './App.css'
 
-const AboutPage = lazy(() => import('./pages/About'))
-const NotFoundPage = lazy(() => import('./pages/404'))
-const SearchPage = lazy(() => import('./pages/Search'))
+const AboutPage = lazy(() => import('./pages/About.jsx'))
+const NotFoundPage = lazy(() => import('./pages/404.jsx'))
+const SearchPage = lazy(() => import('./pages/Search.jsx'))
 
 const appRoutes = [{ path: '/search/:query', Component: SearchPage }]
 
