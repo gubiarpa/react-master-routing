@@ -3,9 +3,10 @@ import { lazy, Suspense } from 'react'
 import { Router } from './Router'
 import { Route } from './Route'
 
+import HomePage from './pages/Home'
+
 import './App.css'
 
-const HomePage = lazy(() => import('./pages/Home'))
 const AboutPage = lazy(() => import('./pages/About'))
 const NotFoundPage = lazy(() => import('./pages/404'))
 const SearchPage = lazy(() => import('./pages/Search'))
